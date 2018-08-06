@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <LinearLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        style="@style/editTextVisuals">
+
+        <ImageView
+            android:id="@+id/searchImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_search"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/edit_hint"
+            android:inputType="textWebEditText"
+            android:imeOptions="actionSearch"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/myLocation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/searchBar"
+        android:src="@drawable/ic_my_location"
+        style="@style/imageButtonVisuals"/>
+
+    <ImageButton
+        android:id="@+id/placePicker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/searchBar"
+        android:src="@drawable/ic_place_picker"
+        style="@style/imageButtonVisuals"/>
+
+    <ImageButton
+        android:id="@+id/locationInformation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/placePicker"
+        android:src="@drawable/ic_location_information"
+        style="@style/imageButtonVisuals"/>
+
+</RelativeLayout>

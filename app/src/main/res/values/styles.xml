@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="buttonVisuals">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="textVisuals" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/backgroundWhite</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="infoTextVisuals" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@color/backgroundWhite</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">10</item>
+    </style>
+
+    <style name="editTextVisuals" >
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:background">@drawable/edit_background</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="infoVisuals" >
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:background">@drawable/edit_background</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="imageButtonVisuals" >
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+</resources>
